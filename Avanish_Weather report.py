@@ -1,9 +1,10 @@
+
 import requests
 import os
 
 location=input("Enter the city name:")
 
-key=os.environ['api_key']
+key=os.environ['Avanish_Weather_api_key']
 
 api_url="https://api.openweathermap.org/data/2.5/weather?q="+location+"&appid="+key
 
@@ -29,4 +30,3 @@ else:
     print("Current Weather Description: {}".format(weather_desc))
     print("Humidity: {}%".format(humidity))
     print("Wind Speed is:",wind_speed,"kmph")
-
